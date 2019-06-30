@@ -165,10 +165,10 @@ void URLLoaderHandler::ReportResult(const std::string& fname,
           handler->Start();
         }
       }
-  }
-  else {
-	  fflush(stdout);
-	}
+    }
+    else {
+      fflush(stdout);
+    }
   } 
   else {
     printf("URLLoaderHandler::ReportResult(Err). %s\n", text.c_str());
