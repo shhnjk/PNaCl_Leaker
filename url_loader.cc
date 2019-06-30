@@ -17,7 +17,7 @@
 class URLLoaderInstance : public pp::Instance {
  public:
   explicit URLLoaderInstance(PP_Instance instance) : pp::Instance(instance) {
-    std::string target_url = "https://shhnjk.azurewebsites.net/secret.txt";
+    std::string target_url = "https://test.shhnjk.com/secret.html";
     URLLoaderHandler* handler = URLLoaderHandler::Create(this, target_url);
     if (handler != NULL) {
       handler->Start();
