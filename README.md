@@ -1,4 +1,4 @@
 # PNaCl_Leaker
-Simple PoC to leak contents from embedded origin
+Simple PoC to leak contents from embedded origin using Chrome's PNaCl plugin
 
 This is modified version of [url_loader](https://cs.chromium.org/chromium/src/native_client_sdk/src/examples/api/url_loader/) example.
