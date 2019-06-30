@@ -165,9 +165,9 @@ void URLLoaderHandler::ReportResult(const std::string& fname,
           handler->Start();
         }
       }
-    }
-    else {
-      fflush(stdout);
+      else {
+        fflush(stdout);
+      }
     }
   } 
   else {
